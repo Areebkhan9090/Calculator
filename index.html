@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div>
+            <input disabled id="calc-input" type="text" placeholder="Calculator">
+        </div>
+
+        <div class="btn">
+            <button onclick="numInput('7')">7</button>
+            <button onclick="numInput('8')">8</button>
+            <button onclick="numInput('9')">9</button>
+            <button onclick="numPercent('%')">%</button>
+        </div>
+
+        <div class="btn">
+            <button onclick="numInput('4')">4</button>
+            <button onclick="numInput('5')">5</button>
+            <button onclick="numInput('6')">6</button>
+            <button onclick="numInput('/')">/</button>
+        </div>
+
+        <div class="btn">
+            <button onclick="numInput('1')">1</button>
+            <button onclick="numInput('2')">2</button>
+            <button onclick="numInput('3')">3</button>
+            <button onclick="numInput('*')">x</button>
+        </div>
+
+
+        <div class="btn">
+            <button onclick="numInput('.')">.</button>
+            <button onclick="numInput('0')">0</button>
+            <button onclick="numInput('00')">00</button>
+            <button onclick="numInput('-')">-</button>
+        </div>
+
+
+
+        <div class="btn">
+            <button onclick="numInput('(')">(</button>
+            <button onclick="numInput(')')">)</button>
+            <button onclick="numclear()">C</button>
+            <button onclick="numInput('+')">+</button>
+        </div>
+
+        <div class="btn">
+            <button onclick="numPower()">x<sup>2</sup></button>
+            <button onclick="numunderRoot()">underroot</button>
+            <button id="numresult" onclick="numResult()">=</button>            
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
